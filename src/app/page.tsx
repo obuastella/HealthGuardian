@@ -1,9 +1,50 @@
-import { Button } from "@/components/ui/button";
+import Navbar from "./LandingPage/Navbar/navbar";
+import dynamic from "next/dynamic";
 
-export default function Home() {
+const DynamicHeroSection = dynamic(
+  () => import("./LandingPage/Sections/heroSection"),
+  {
+    ssr: false,
+  }
+);
+const DynamicSecondSection = dynamic(
+  () => import("./LandingPage/Sections/secondSection"),
+  {
+    ssr: false,
+  }
+);
+const DynamicCarexaSection = dynamic(
+  () => import("./LandingPage/Sections/carexaSection"),
+  {
+    ssr: false,
+  }
+);
+const DynamicFourthSection = dynamic(
+  () => import("./LandingPage/Sections/fourthSection"),
+  {
+    ssr: false,
+  }
+);
+const DynamicAnimationSection = dynamic(
+  () => import("./LandingPage/Sections/animationSection"),
+  {
+    ssr: false,
+  }
+);
+const DynamicFooter = dynamic(() => import("./LandingPage/Sections/footer"), {
+  ssr: false,
+});
+
+export default function page() {
   return (
-    <h1 className="text-orange-600">
-      landing page
-    </h1>
+    <main className="w-full overflow-hidden">
+      <Navbar />
+      <DynamicHeroSection />
+      <DynamicSecondSection />
+      <DynamicCarexaSection />
+      <DynamicFourthSection />
+      <DynamicAnimationSection />
+      <DynamicFooter />
+    </main>
   );
 }
