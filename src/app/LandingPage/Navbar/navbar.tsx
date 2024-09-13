@@ -45,7 +45,7 @@ const Navbar = () => {
                 height={50}
                 alt="Logo"
               />
-              <span className="text-lg text-black">Health Guardians</span>
+              <span className="text-lg text-black">Health Guardian</span>
             </div>
           </div>
           <div className="hidden md:flex space-x-10">
