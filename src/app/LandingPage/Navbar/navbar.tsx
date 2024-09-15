@@ -52,8 +52,8 @@ const Navbar = () => {
             <Link href="/telemedicine" legacyBehavior>
               <a className="line text-black text-[20px] relative">Telemedicine</a>
             </Link>
-            <Link href="/" legacyBehavior>
-              <a className="line text-black text-[20px] relative">About Us</a>
+            <Link href="/dashboard" legacyBehavior>
+              <a className="line text-black text-[20px] relative">Doctor's Dashboard</a>
             </Link>
             <Link href="/" legacyBehavior>
               <a className="line text-black text-[20px] relative">
@@ -115,12 +115,12 @@ const Navbar = () => {
               Telemedicine
             </a>
           </Link>
-          <Link href="/" legacyBehavior>
+          <Link href="/dashboard" legacyBehavior>
             <a
               className="block text-black text-[20px] relative w-[90px] pt-2 line"
               onClick={toggleMenu}
             >
-              About Us
+              Doctor's Dashboard
             </a>
           </Link>
           <Link href="/" legacyBehavior>
