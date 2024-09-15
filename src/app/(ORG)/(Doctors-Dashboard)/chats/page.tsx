@@ -1,6 +1,6 @@
 "use client";
-import { useState, useEffect } from "react";
 import Layout from "@/components/layout";
+import { useState, useEffect } from "react";
 interface Message {
   id: number;
   name: string;
