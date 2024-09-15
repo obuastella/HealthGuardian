@@ -55,9 +55,9 @@ const Navbar = () => {
             <Link href="/dashboard" legacyBehavior>
               <a className="line text-black text-[20px] relative">Doctor&apos;s Dashboard</a>
             </Link>
-            <Link href="/" legacyBehavior>
+            <Link href="/records" legacyBehavior>
               <a className="line text-black text-[20px] relative">
-                How It Works
+                Patients Record
               </a>
             </Link>
           </div>
@@ -123,12 +123,12 @@ const Navbar = () => {
               Doctor&apos;s Dashboard
             </a>
           </Link>
-          <Link href="/" legacyBehavior>
+          <Link href="/records" legacyBehavior>
             <a
               className="block text-black text-[20px] relative w-[130px] pt-2 line"
               onClick={toggleMenu}
             >
-              How It Works
+              Patients Record
             </a>
           </Link>
         </div>
