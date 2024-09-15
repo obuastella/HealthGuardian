@@ -49,8 +49,8 @@ const Navbar = () => {
             </div>
           </div>
           <div className="hidden md:flex space-x-10">
-            <Link href="#solutions" legacyBehavior>
-              <a className="line text-black text-[20px] relative">Solutions</a>
+            <Link href="/telemedicine" legacyBehavior>
+              <a className="line text-black text-[20px] relative">Telemedicine</a>
             </Link>
             <Link href="/" legacyBehavior>
               <a className="line text-black text-[20px] relative">About Us</a>
@@ -107,12 +107,12 @@ const Navbar = () => {
         }`}
       >
         <div className="flex flex-col items-end px-4 pt-2 pb-3 space-y-1 sm:px-3">
-          <Link href="#solutions" legacyBehavior>
+          <Link href="/telemedicine" legacyBehavior>
             <a
               className="block text-black text-[20px] relative w-[90px] pt-2 line"
               onClick={toggleMenu}
             >
-              Solutions
+              Telemedicine
             </a>
           </Link>
           <Link href="/" legacyBehavior>
