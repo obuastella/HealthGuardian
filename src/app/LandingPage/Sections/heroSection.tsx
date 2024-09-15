@@ -127,7 +127,7 @@ const HeroSection: React.FC = () => {
             clinical excellence with the ease of virtual care. Schedule a
             virtual visit with your doctor at any time of day or night.
           </p>
-          <Link href="/signup">
+          <Link href="#">
             <button className="bg-[#063b3f] text-white text-[16px] md:text-[20px] ml-4 md:ml-10 mt-12 py-2 px-6 rounded-[50px] hover:bg-[#045357] transition duration-300 h-[50px] md:h-[60px] w-48 md:w-56 hover:transform hover:translate-x-4 hover:shadow-lg moving-wave-button">
               Check it Out
             </button>
